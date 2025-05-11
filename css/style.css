@@ -205,6 +205,13 @@ footer {
     font-size: 62.5%;
   }
 
+  body {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    min-height: 1500px;
+  }
+
   #hamburger-menu {
     display: inline-block;
   }
@@ -229,6 +236,17 @@ footer {
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 1.7rem;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/bgtablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
   }
 
   .about .row {
@@ -255,12 +273,23 @@ footer {
   .about .row .content p {
     font-size: 1.1;
   }
+
+  .contact {
+    padding-top: 8rem;
+  }
 }
 
 /* handphone */
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
+  }
+
+  body {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    min-height: 1500px;
   }
 
   #hamburger-menu {
@@ -288,6 +317,17 @@ footer {
     padding: 0.5rem;
     font-size: 1.7rem;
   }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/bghandphone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
   .about .row {
     flex-wrap: wrap;
   }
@@ -311,5 +351,9 @@ footer {
 
   .about .row .content p {
     font-size: 1;
+  }
+
+  .contact {
+    padding-top: 8rem;
   }
 }
